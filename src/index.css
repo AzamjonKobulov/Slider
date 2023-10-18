@@ -1,8 +1,13 @@
 .slider {
-  width: 100%;
+  width: 90rem;
+  max-height: 100vh;
   margin: auto;
   border-radius: 1.25rem;
   display: flex;
+}
+
+.swiper-wrapper {
+  margin-bottom: 100px !important;
 }
 
 .slider-img {
@@ -12,11 +17,10 @@
 }
 
 .swiper-scrollbar {
-  height: 4px !important;
+  height: 5px !important;
   position: absolute !important;
-  z-index: 20;
-  bottom: 50px !important;
-  background-color: rgba(0, 0, 0, 0.208) !important;
+  bottom: 32px !important;
+  background-color: rgba(189, 187, 187, 0.662) !important;
 }
 
 .swiper-scrollbar-drag {
