@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { Scrollbar, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 import Image1 from './assets/project/sochi.jpeg';
 import Image2 from './assets/project/sochi.jpeg';
@@ -33,10 +34,10 @@ export default function App() {
   return (
     <>
       <Swiper
-        scrollbar={{
-          hide: true,
+        pagination={{
+          type: 'progressbar',
         }}
-        modules={[Scrollbar, Autoplay]}
+        modules={[Pagination, Autoplay]}
         autoplay={{ delay: 1000 }}
         loop={true}
         className="mySwiper slider"
